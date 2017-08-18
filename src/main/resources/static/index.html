@@ -6,11 +6,43 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Consume restService</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+        
+        <!-- import vuejs -->
+        <script src="js/vue.js"></script>
+        
+        <!-- import axios -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        
     </head>
     <body>
-        <div>TODO write content</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2 col-xs-offset-5">
+                    <form class="form-signin" id="vue-app">
+                    <h2 class="form-signin-heading">Logeo</h2>
+                    <label for="inputEmail" class="sr-only">Email address</label>
+                    <input type="email" v-model="username" class="form-control" placeholder="Email address" required autofocus>
+                    <label for="inputPassword" class="sr-only">Password</label>
+                    <input type="password" v-model="password" class="form-control" placeholder="Password" required>
+                    
+                    <a class="btn btn-lg btn-primary btn-block" @click="enviar">Sign in</a>
+                  </form>
+                </div>
+            </div>
+        </div>
+        
+        
+        <script src="js/pages/login.js"></script>
     </body>
 </html>
